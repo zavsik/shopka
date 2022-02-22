@@ -1,5 +1,6 @@
 .container {
-  
+  margin-left: 220px;
+  margin-right: 220px;
 }
 
 .main {
@@ -9,7 +10,7 @@
 .navbar{
   height: 88px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .search__field{
@@ -101,4 +102,17 @@
   .filtres{
     display: none;
   }
+  li{
+    list-style-type: none;
+  }
+  p{
+    color: #2264D1;
+    margin: unset;
+    font-weight: 600;
+  }
+}
+.content{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.goods}>
-
+            sdfssdf
           </div>
         </div>
       </main>
