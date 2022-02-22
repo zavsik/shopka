@@ -29,7 +29,6 @@ export default function Home() {
         </div>
         <div className={styles.content}>
           <div className={styles.categories}>
-            <h2>Категории</h2>
             <div className={styles.filtres}>
               <p>Телефоны и смартфоны</p>
               <ul>

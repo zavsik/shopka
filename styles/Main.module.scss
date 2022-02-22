@@ -1,6 +1,11 @@
 .container {
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-right: auto;
+  margin-left:  auto;
+
+  max-width: 1200px;
+
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 .main {
@@ -75,66 +80,42 @@
 }
 
 .categories{
-  position: sticky;
-
-  max-width: max-content;
-  h2{
-    margin-top: 0;
-    color: #2264D1;
-    font-weight: 700;
-  }
-  p{
-    font-size: 20px;
-    font-weight: 600;
-  }
-  button{
-    font-weight: 600;
-    transition: .4s;
-    color: #2264D1;
-    width: max-content;
-    padding: 10px;
-    font-size: 20px;
-    border-style: none;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px
-      rgba(27, 78, 163, 0.2),
-      0px 4px 8px
-      rgba(41, 121, 255, 0.2);
-    border-radius: 4px;
-  }
-  button:hover{
-    transition: .4s;
-    color: white;
-    background: #2264D1;
-    box-shadow: 0px 2px 4px
-      rgba(27, 78, 163, 0.2),
-      0px 4px 8px
-      rgba(41, 121, 255, 0.2);
-    cursor: pointer;
-  }
+  
+  margin-top: 15px;
 
   .filtres{
+    position: sticky;
+    top: 0;
+    padding: 30px;
     width: max-content;
     transition: .1s;
     border-radius: 10px;
-    padding: 35px;
-    margin-top: 30px;
     box-shadow: 0px 2px 4px
       rgba(27, 78, 163, 0.2),
       0px 4px 8px
       rgba(41, 121, 255, 0.2);
+
+    div{
+      margin: 5px;
+      height: 2px;
+      width: 100%;
+      background-color: #2264D1;
+    }
   }
   li{
-    list-style-type: none;
+    list-style-type:circle;
+
+  
   }
   p{
+    font-size: 18px;
     color: #2264D1;
     margin: unset;
-    font-weight: 600;
   }
 }
 
 .wrapper{
+  position: relative;
   display: flex;
   justify-content: flex-end;
   margin-left: 50px;
