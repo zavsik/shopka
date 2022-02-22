@@ -59,22 +59,20 @@ export default function Home() {
           </div>
           <div className={styles.wrapper}>
             <div className={styles.products}>
-              <Product>Hello</Product>
-              <Product>Hell</Product>
-              <Product>Hel</Product>
-              <Product>He</Product>
-              <Product>H</Product>
-              <Product>g</Product>
-              <Product>gh</Product>
-              <Product>hhjj</Product>
-              <Product>Hello</Product>
-              <Product>Hell</Product>
-              <Product>Hel</Product>
-              <Product>He</Product>
-              <Product>H</Product>
-              <Product>g</Product>
-              <Product>gh</Product>
-              <Product>hhjj</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+              <Product link='/photo_2.jpeg'>Hello</Product>
+
             </div>
           </div>
         </div>

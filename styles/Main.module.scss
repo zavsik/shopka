@@ -115,12 +115,11 @@
 }
 
 .wrapper{
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
   margin-left: 50px;
+  width: 100%;
   .products{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
