@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Main.module.scss'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -11,7 +12,23 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Hello world!</h1>
+        <div className={styles.navbar}>
+          <div className={styles.logo}>
+            <Image src={'/logo.svg'} width={174} height={41} />
+          </div>
+
+          <div className={styles.search__field}>
+            <div className={styles.input__set}>
+              <Image src={'/icons/search__icon.svg'} width={17.5} height={17.5}/>
+              <input placeholder={'Поиск...'} type='search'/>
+
+            </div>
+          </div>
+
+          <div className={styles.login__btn}>
+            <button>Войти</button>
+          </div>
+        </div>
       </main>
     </div>
   )
