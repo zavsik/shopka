@@ -5,8 +5,12 @@ export default function Product(props) {
 
     return(
         <div className={styles.container}>
-            <Image src={props.link} width={250} height={250} />
-            <button>Купить</button>
+            <div>
+                <Image src={props.link} width={250} height={250} />
+            </div>
+            <div>
+                <button>Купить</button>
+            </div>
         </div>
     )
 }
