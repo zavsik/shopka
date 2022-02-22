@@ -3,7 +3,25 @@ import styles from '../styles/Main.module.scss'
 import Image from 'next/image'
 
 export default function Home() {
-  
+  let value = false
+
+
+
+  function handlerClick() {
+    let setValue = document.getElementById('filters__block')
+
+    if(value == false) {
+      setValue.style.display = "block"
+      value = true
+    }else{
+      setValue.style.display = 'none'
+      value = false
+
+      return value
+
+    }
+  }
+
 
   return (
     <div className={styles.container}>
@@ -33,8 +51,8 @@ export default function Home() {
         </div>
         <div className={styles.content}>
           <div className={styles.categories}>
-            <button>Категории</button>
-            <div>
+            <button onClick={handlerClick}>Категории</button>
+            <div id='filters__block' className={styles.filtres}>
               <p>Телефоны и смартфоны</p>
               <ul>
                 <li><a>Телефоны</a></li>
