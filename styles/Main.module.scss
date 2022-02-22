@@ -68,7 +68,21 @@
   }
   
 }
+.content{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .categories{
+  position: sticky;
+
+  max-width: max-content;
+  h2{
+    margin-top: 0;
+    color: #2264D1;
+    font-weight: 700;
+  }
   p{
     font-size: 20px;
     font-weight: 600;
@@ -100,7 +114,15 @@
   }
 
   .filtres{
-    display: none;
+    width: max-content;
+    transition: .1s;
+    border-radius: 10px;
+    padding: 35px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 4px
+      rgba(27, 78, 163, 0.2),
+      0px 4px 8px
+      rgba(41, 121, 255, 0.2);
   }
   li{
     list-style-type: none;
@@ -111,8 +133,13 @@
     font-weight: 600;
   }
 }
-.content{
-  margin-top: 25px;
+
+.wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-left: 50px;
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

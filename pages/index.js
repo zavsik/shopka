@@ -1,28 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Main.module.scss'
 import Image from 'next/image'
+import Product from './components/product'
 
 export default function Home() {
-  let value = false
-
-
-
-  function handlerClick() {
-    let setValue = document.getElementById('filters__block')
-
-    if(value == false) {
-      setValue.style.display = "block"
-      value = true
-    }else{
-      setValue.style.display = 'none'
-      value = false
-
-      return value
-
-    }
-  }
-
-
   return (
     <div className={styles.container}>
       <Head>
@@ -36,42 +17,66 @@ export default function Home() {
           <div className={styles.logo}>
             <Image src={'/logo.svg'} width={174} height={41} />
           </div>
-
           <div className={styles.search__field}>
             <div className={styles.input__set}>
               <Image src={'/icons/search__icon.svg'} width={17.5} height={17.5}/>
               <input placeholder={'Поиск...'} type='search'/>
-
             </div>
           </div>
-
           <div className={styles.login__btn}>
             <button>Войти</button>
           </div>
         </div>
         <div className={styles.content}>
           <div className={styles.categories}>
-            <button onClick={handlerClick}>Категории</button>
-            <div id='filters__block' className={styles.filtres}>
+            <h2>Категории</h2>
+            <div className={styles.filtres}>
               <p>Телефоны и смартфоны</p>
               <ul>
                 <li><a>Телефоны</a></li>
                 <li><a>Смартфоны</a></li>
               </ul>
-              <p>Телефоны и смартфоны</p>
+              <p>Ноутбуки и ПК</p>
               <ul>
-                <li><a>Телефоны</a></li>
-                <li><a>Смартфоны</a></li>
+                <li><a>Ноутбуки</a></li>
+                <li><a>ПК</a></li>
               </ul>
-              <p>Телефоны и смартфоны</p>
+              <p>Недвижимость</p>
               <ul>
-                <li><a>Телефоны</a></li>
-                <li><a>Смартфоны</a></li>
+                <li><a>Частный дом</a></li>
+                <li><a>Квартира</a></li>
+              </ul>
+              <p>Одежда</p>
+              <ul>
+                <li><a>Зимняя</a></li>
+                <li><a>Летняя</a></li>
+              </ul>
+              <p>Дом и сад</p>
+              <ul>
+                <li><a>Для дома</a></li>
+                <li><a>Для сада</a></li>
               </ul>
             </div>
           </div>
-          <div className={styles.goods}>
-            sdfssdf
+          <div className={styles.wrapper}>
+            <div className={styles.products}>
+              <Product>Hello</Product>
+              <Product>Hell</Product>
+              <Product>Hel</Product>
+              <Product>He</Product>
+              <Product>H</Product>
+              <Product>g</Product>
+              <Product>gh</Product>
+              <Product>hhjj</Product>
+              <Product>Hello</Product>
+              <Product>Hell</Product>
+              <Product>Hel</Product>
+              <Product>He</Product>
+              <Product>H</Product>
+              <Product>g</Product>
+              <Product>gh</Product>
+              <Product>hhjj</Product>
+            </div>
           </div>
         </div>
       </main>
