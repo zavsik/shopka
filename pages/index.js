@@ -3,6 +3,8 @@ import styles from '../styles/Main.module.scss'
 import Image from 'next/image'
 
 export default function Home() {
+  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -27,6 +29,31 @@ export default function Home() {
 
           <div className={styles.login__btn}>
             <button>Войти</button>
+          </div>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.categories}>
+            <button>Категории</button>
+            <div>
+              <p>Телефоны и смартфоны</p>
+              <ul>
+                <li><a>Телефоны</a></li>
+                <li><a>Смартфоны</a></li>
+              </ul>
+              <p>Телефоны и смартфоны</p>
+              <ul>
+                <li><a>Телефоны</a></li>
+                <li><a>Смартфоны</a></li>
+              </ul>
+              <p>Телефоны и смартфоны</p>
+              <ul>
+                <li><a>Телефоны</a></li>
+                <li><a>Смартфоны</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.goods}>
+
           </div>
         </div>
       </main>
