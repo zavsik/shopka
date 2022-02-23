@@ -10,7 +10,7 @@ export default function Main() {
 
   const [products, setProducts] = useState([])
 
-  const createProduct = (name) => {
+  const createProduct = () => {
     const newProduct = {
       id: id.current
     }
@@ -77,6 +77,7 @@ export default function Main() {
           <div className={styles.wrapper}>
             <div className={styles.products}>
               {
+                products.length > 0 ?
                 products.map( (product, idx) => {
                     return (
                         <>
@@ -87,7 +88,9 @@ export default function Main() {
                           </Link>
                         </>
                     );
-                })
+                }) : <div className={styles.none__products}>
+                        <p>Нет товаров</p>
+                    </div>
               }
             </div>
           </div>
