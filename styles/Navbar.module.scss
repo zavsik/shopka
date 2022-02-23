@@ -1,0 +1,90 @@
+.navbar{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+
+    h3{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 32px;
+        margin: unset;
+        font-weight: 400;
+
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
+        border-radius: 6px;
+        p{  
+            margin: unset;
+            color: #FFFFFF;
+            font-size: 32px;
+        }
+    }
+  }
+.search__field{
+    padding: 25px;
+    width: 50%;
+    height: 50px;
+    border-radius: 99px;
+    background-color: #EDEDF0;
+    display: flex;
+    align-items: center;
+  
+    .input__set{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    input{
+      margin: 10px;
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  
+  .login__btn{
+    button{
+      font-weight: 600;
+      transition: .4s;
+      color: #2264D1;
+      width: max-content;
+      padding: 10px;
+      font-size: 20px;
+      border-style: none;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 4px
+        rgba(27, 78, 163, 0.2),
+        0px 4px 8px
+        rgba(41, 121, 255, 0.2);
+      border-radius: 4px;
+    }
+  
+    button:hover{
+      transition: .4s;
+      color: white;
+      background: #2264D1;
+      box-shadow: 0px 2px 4px
+        rgba(27, 78, 163, 0.2),
+        0px 4px 8px
+        rgba(41, 121, 255, 0.2);
+      cursor: pointer;
+    }
+    
+}

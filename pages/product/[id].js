@@ -1,7 +1,9 @@
+import Navbar from "../components/navbar"
+import styles from "../../styles/Main.module.scss"
 export default function Id() {
     return(
-        <div>
-            <h1>Hello product!</h1>
+        <div className={styles.container}>
+            <Navbar />
         </div>
     )
 }
