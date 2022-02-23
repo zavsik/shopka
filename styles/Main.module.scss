@@ -4,8 +4,8 @@
 
   max-width: 1350px;
 
-  padding-right: 10px;
-  padding-left:  10px;
+  padding-right: 15px;
+  padding-left:  15px;
 }
 
 .main {
@@ -20,7 +20,7 @@
 }
 .search__field{
   padding: 25px;
-  width: 650px;
+  width: 50%;
   height: 50px;
   border-radius: 99px;
   background-color: #EDEDF0;
@@ -80,7 +80,6 @@
 }
 
 .categories{
-  
   margin-top: 15px;
 
   .filtres{
@@ -104,7 +103,11 @@
   }
   li{
     list-style-type:circle;
-
+    a:hover{
+      color: #2264D1;
+      transition: .3s;
+      cursor: pointer;
+    }
   
   }
   p{
@@ -116,6 +119,7 @@
 
 .wrapper{
   margin-left: 50px;
+  width: 100%;
   .products{
     display: flex;
     flex-wrap: wrap;

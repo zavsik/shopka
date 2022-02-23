@@ -2,8 +2,25 @@ import Head from 'next/head'
 import styles from '../styles/Main.module.scss'
 import Image from 'next/image'
 import Product from './components/product'
+import Link from 'next/link'
+import { useRef, useState } from 'react'
 
-export default function Home() {
+export default function Main() {
+  const id = useRef(1)
+
+  const [products, setProducts] = useState([])
+
+  const createProduct = (name) => {
+    const newProduct = {
+      id: id.current
+    }
+
+    id.current += 1
+
+    setProducts( (prev) => [...prev, newProduct])
+  }
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,7 +41,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.login__btn}>
-            <button>Войти</button>
+            <button onClick={createProduct}>Войти</button>
           </div>
         </div>
         <div className={styles.content}>
@@ -59,20 +76,19 @@ export default function Home() {
           </div>
           <div className={styles.wrapper}>
             <div className={styles.products}>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-              <Product link='/photo_2.jpeg'>Hello</Product>
-
+              {
+                products.map( (product, idx) => {
+                    return (
+                        <>
+                          <Link href={`/product/${product.id}`}>
+                            <a>
+                              <Product link={'/photo.jpeg'}></Product>
+                            </a>
+                          </Link>
+                        </>
+                    );
+                })
+              }
             </div>
           </div>
         </div>

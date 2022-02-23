@@ -9,6 +9,9 @@ export default function Product(props) {
                 <Image src={props.link} width={250} height={250} />
             </div>
             <div>
+                <p>Товар для лохов, а дороги ... тоже для Лохов!</p>
+            </div>
+            <div>
                 <button>Купить</button>
             </div>
         </div>
