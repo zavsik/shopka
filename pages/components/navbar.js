@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 import styles from '../../styles/Navbar.module.scss'
 
 function Navbar(props) {
@@ -10,7 +10,6 @@ function Navbar(props) {
               <p>{props.icon}</p>
             </div>
             <h3>Shopka</h3>
-
           </div>
           <div className={styles.search__field}>
             <div className={styles.input__set}>
@@ -19,7 +18,13 @@ function Navbar(props) {
             </div>
           </div>
           <div className={styles.login__btn}>
-            <button onClick={props.createProduct}>Войти</button>
+            <Link href={'/login'}>
+                <a>
+                    <button>Войти</button>
+                </a>
+            </Link>
+
+            <button onClick={props.createProduct}>ADD</button>
           </div>
         </div>
     )
