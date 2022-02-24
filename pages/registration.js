@@ -16,15 +16,16 @@ export default function Login() {
                 </Link>
                 <div className={styles.frame}>
                     <div className={styles.form__block}>
-                        <h3>Вход в аккаунт</h3>                        
+                        <h3>Регистрация</h3>                        
                         <form>
                             <input placeholder='Почта' />
                             <input placeholder='Пароль' />
+                            <input placeholder='Пов-пароль' />
                             <button>Войти</button>
                         </form>
                         <p>
-                            У вас еще нет аккаунта? 
-                            <Link href={'/registration'}><a>Создайте!</a></Link>
+                            У вас уже есть аккаунт?
+                            <Link href={'/login'}><a>Войти!</a></Link>
                         </p>
                     </div>
                 </div>

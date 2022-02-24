@@ -3,12 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
 .logo{
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
     h3{
         display: flex;
         align-items: center;
