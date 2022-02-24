@@ -21,7 +21,7 @@ export default function Login() {
                             <input placeholder='Почта' />
                             <input placeholder='Пароль' />
                             <input placeholder='Пов-пароль' />
-                            <button>Войти</button>
+                            <button>Создать</button>
                         </form>
                         <p>
                             У вас уже есть аккаунт?
